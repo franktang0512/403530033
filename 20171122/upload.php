@@ -5,7 +5,7 @@ echo "Weight:".$weight."<br>";
 echo "BMI : ".$weight/$height/$height ."<br>";
 
 if($_FILES["file"]["error"]>0){
-    echo "error : ".$_FILES["file"]["error"]."(無檔案上傳)";
+    echo "error : ".$_FILES["file"]["error"];
 }else{
     echo "檔案名稱 : ".$_FILES["file"]["name"]."<br/>";
     echo "檔案類型 : ".$_FILES["file"]["type"]."<br/>";
